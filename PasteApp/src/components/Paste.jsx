@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react"; // Import useState
 import { removeFromPastes } from "../redux/pasteSlice";
 import { FormatDate } from "../utlis/formatDate";
+import Footer from "./Footer";
 
 const Paste = () => {
   const pastes = useSelector((state) => state.paste.pastes);
@@ -114,6 +115,7 @@ const Paste = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
