@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { addToPastes, updatePastes } from "../redux/pasteSlice";
 import { useSearchParams } from "react-router-dom";
+import Footer from "./Footer";
 
 const Home = () => {
   const [value, setValue] = useState("");
@@ -131,6 +132,7 @@ const Home = () => {
           />
         </div>
       </div>
+       <Footer />
     </div>
   );
 };
